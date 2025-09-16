@@ -1,12 +1,10 @@
 import type { ToolCallMessagePartComponent } from "@assistant-ui/react";
-import { DatabaseIcon, CheckCircleIcon, XCircleIcon, ClockIcon, CopyIcon, CheckIcon } from "lucide-react";
+import { CheckCircleIcon, XCircleIcon, ClockIcon, CopyIcon, CheckIcon } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
 export const DatabaseResults: ToolCallMessagePartComponent = ({
-  toolName,
-  argsText,
   result,
 }) => {
   const [isCopied, setIsCopied] = useState(false);
@@ -22,7 +20,7 @@ export const DatabaseResults: ToolCallMessagePartComponent = ({
   // Parse the result
   const dbResult = result as {
     success?: boolean;
-    data?: any[];
+    data?: Record<string, unknown>[];
     rowCount?: number;
     executionTime?: number;
     error?: string;

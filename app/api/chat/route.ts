@@ -1,8 +1,6 @@
 import { openai } from "@ai-sdk/openai";
-import { streamText, UIMessage, convertToModelMessages, tool } from "ai";
+import { streamText, UIMessage, convertToModelMessages } from "ai";
 import { validateWineryId, getWineryContext } from "@/lib/sql-generator";
-import { executeDatabaseQuery, formatQueryResults, validateSQLQuery } from "@/lib/database-executor";
-import { z } from "zod";
 
 export async function POST(req: Request) {
   const { messages }: { messages: UIMessage[] } = await req.json();
@@ -17,8 +15,7 @@ export async function POST(req: Request) {
     throw new Error('WINERY_ID must be a valid GUID format');
   }
 
-  // Get admin contact ID
-  const adminContactId = process.env.ADMIN_CONTACT_ID || '9F56A611-3193-4204-8B9E-6A970C4CAC44';
+  // Note: Admin contact ID is handled in the execute-query endpoint
   
   const result = streamText({
     model: openai("gpt-4o"),

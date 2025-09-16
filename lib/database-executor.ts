@@ -1,6 +1,6 @@
 interface DatabaseQueryResponse {
   success: boolean;
-  data?: any[];
+  data?: Record<string, unknown>[];
   error?: string;
   rowCount?: number;
   executionTime?: number;

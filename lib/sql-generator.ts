@@ -11,11 +11,8 @@ export async function generateSQL(userQuery: string): Promise<{ sql: string; exp
       throw new Error('WINERY_ID not found in environment variables');
     }
 
-    // Load schema and template
-    const schemaPath = path.join(process.cwd(), 'data', 'views_schema_fixed.json');
+    // Load template
     const templatePath = path.join(process.cwd(), 'data', 'text-to-sql-template-fixed.txt');
-    
-    const schema = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
     const template = fs.readFileSync(templatePath, 'utf8');
     
     // Create enhanced prompt with WINERY_ID context
