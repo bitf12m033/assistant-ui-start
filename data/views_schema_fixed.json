@@ -1,0 +1,8006 @@
+{
+  "VW_AdminContacts": {
+    "columns": [
+      {
+        "name": "AdminContactID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "AdminContactType",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ThirdPartySupplierID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "FirstName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "LastName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Email",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Username",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Password",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 1000,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isActive",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "CurrentAccessDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "LastAccessDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isEnableRefund",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isEnableImport",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowEditCompletedOrders",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "RowID",
+        "type": "bigint",
+        "nullable": false,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 0
+      },
+      {
+        "name": "isAllowDeleteMembers",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowSiteEditor",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowEnterpriseReporting",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowCCOnFile",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAccessWebService",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowOrderTypeOverride",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isShipCompliantSetup",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowSalesAssociateAccess",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isDeleted",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowClearCarts",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowFulfillment",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowMailChimp",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isLocked",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_CartCoupons": {
+    "columns": [
+      {
+        "name": "CartCouponID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CartID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CouponID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CouponName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CouponCode",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "inUse",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "CouponProductValue",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "CouponShippingValue",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "TotalCouponValue",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "CouponValueOld",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "RowID",
+        "type": "bigint",
+        "nullable": false,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_CartItems": {
+    "columns": [
+      {
+        "name": "rowID",
+        "type": "int",
+        "nullable": false,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "CartItemID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ThirdPartySupplierID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ThirdPartyStoreID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CartID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isWine",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "BottleCount",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "Quantity",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "ProductCategoryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ProductTypeID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ProductPriceID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ProductID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ProductKeyID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ProductPriceKeyID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ProductName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ProductSKU",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Description",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "OriginalPrice",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "Discount",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "Price",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "OriginalShippingPrice",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "ShippingDiscount",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "ShippingPrice",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "isLowestCostShipping",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "DiscountOld",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "PriceUnits",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Weight",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 3
+      },
+      {
+        "name": "WineTypeID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineVintage",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "isCase",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "WineBottleSizeID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineBrandID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineVarietalID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineAppellationID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ProductReportTypeID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipperID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShippingSKU",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "WishListQuantity",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "CustomizedPrice",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "TokenID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "KitID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "RefundAmount",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "RemainingAmount",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "OriginalCartItemID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "OverrideTotal",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "COGS",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "CartShippingID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "TaxRate",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 5,
+        "precision": 8,
+        "scale": 4
+      },
+      {
+        "name": "TaxAmount",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "MarketplaceSKU",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 255,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "MarketingFee",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "LicenseeName",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 255,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "LicenseeCity",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 255,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "LicenseeState",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 255,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "denominationAbbr",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 10,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "InventoryLocationID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_CartPaymentTypes": {
+    "columns": [
+      {
+        "name": "CartPaymentTypeID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CartPaymentType",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DisplayOrder",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "RowID",
+        "type": "bigint",
+        "nullable": false,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_CartShippings": {
+    "columns": [
+      {
+        "name": "rowID",
+        "type": "int",
+        "nullable": false,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "CartShippingID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "inUse",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isCase",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "ProductTypeID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ThirdPartyStoreID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ThirdPartySupplierID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShippingTypeID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShippingType",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShippingCode",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ForWhat",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShippingRate",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "WineBottleSizeID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Quantity",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "Weight",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "CartID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "LabelPrinted",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_CartStatuses": {
+    "columns": [
+      {
+        "name": "CartStatusID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CartStatus",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Keyword",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DisplayOrder",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "RowID",
+        "type": "bigint",
+        "nullable": false,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 0
+      },
+      {
+        "name": "CartStatusExtendedField",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 255,
+        "precision": 0,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_CartTracking": {
+    "columns": [
+      {
+        "name": "rowID",
+        "type": "int",
+        "nullable": false,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "CartTrackingID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CartID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "TrackingNumber",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 8000,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "Carrier",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      }
+    ]
+  },
+  "VW_Carts": {
+    "columns": [
+      {
+        "name": "rowID",
+        "type": "int",
+        "nullable": false,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "CartID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "OrderNumber",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "MemberID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipMemberID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "is21",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "BillBirthDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "BillFirstName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "BillLastName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "BillCompany",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "BillAddress",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "BillAddress2",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "BillCity",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "BillState",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "BillZipCode",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "BillPhone",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "BillEmail",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 160,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipBirthDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ShipFirstName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipLastName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipCompany",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipAddress",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipAddress2",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipCity",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipState",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 6,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipZipCode",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipPhone",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipEmail",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 160,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "SourceCode",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "createAccount",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isGiftMessage",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "GiftMessage",
+        "type": "text",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "OrderNotes",
+        "type": "text",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "LineItems",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "OrderSubTotal",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "CouponDiscount",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "Taxes",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "TaxableHandling",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "Shipping",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "OrderTotal",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "PaymentBy",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CartPaymentTypeID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CreditCardTypeID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CardExpiryMo",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CardExpiryYr",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "NameOnCard",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DateCompleted",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "CartStatusID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "OrderBlob",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "TrackingBlob",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "AffiliateID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Affiliate",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "AffiliateCode",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "AffiliateCommission",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "CharityID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CharityName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ElypsisFlag",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "NVLAutoFlag",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "WTNAutoFlag",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "NVLApiFlag",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "NVLAPIOrderStatusFlag",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "GiftCertificateID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "AmountPaidByGiftCertificate",
+        "type": "money",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4
+      },
+      {
+        "name": "AmountPaidByCreditCard",
+        "type": "money",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4
+      },
+      {
+        "name": "GiftCertificateNo",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 500,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "GiftCertificateKeyCode",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 500,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "PointsProgramAccountNo",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "PointsProgramPassword",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "AmountPaidByPointsProgram",
+        "type": "money",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4
+      },
+      {
+        "name": "isClubOrder",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "DateComplianceChecked",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateComplianceCommited",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "AllocationID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isShipsImmediately",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isDelayProductCharge",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isDelayShippingCharge",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isRefunded",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isTaxFree",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "CustomizedShippingPrice",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "CustomizedHandlingPrice",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "isDeposit",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "DepositPercentage",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "DepositAmount",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "OrderPaid",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "TransactionID",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "isAllowSendEmail",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isCustomOrderCheckboxChecked",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "ClubBatchID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "TransactionID2",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WillCallLocationID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CopiedFromCartID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ClubMemberID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "AddressName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isAdminOrder",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isOrderGroup",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "OrderGroupID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "PaymentReference",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "BottleDeposit",
+        "type": "numeric",
+        "nullable": false,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "ShipCompliantShipmentStatus",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipCompliantFulfillmentStatus",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ActualShipDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ShipCompliantStatusCheckedDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "Donation",
+        "type": "numeric",
+        "nullable": false,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "CustomDonationPrice",
+        "type": "numeric",
+        "nullable": false,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "OrderName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isForFriend",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "FriendAmountPaid",
+        "type": "numeric",
+        "nullable": false,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "OriginalTaxes",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "isPickedUp",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "RefundOrderNumber",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "OriginalCartID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "RefundedBy",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 450,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "IsTempForRefund",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "IsApplyDiscountForRefund",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "BillCountryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipCountryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "BillProvince",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 90,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipProvince",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 90,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShippingNotes",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": -1,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "OrderNumberPrefix",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "AddedBy",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "IPAddress",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 15,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isReservation",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "VinoVisitReservationID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isPOSOrder",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "CashierName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "RegisterID",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "LicenseRelationshipID",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "isMobileOrder",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "SalesAssociateID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isTeleSalesOrder",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isMobilePOSOrder",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isFacebookOrder",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "MarketingFeeTotal",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "ToSupplierTotal",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "AmountPaidOnAccount",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "AmountPaidByCustomer",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "IsMarketPlaceOrder",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isVoided",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "dateCharged",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "signature",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": -1,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "TaxRate",
+        "type": "decimal",
+        "nullable": true,
+        "max_length": 5,
+        "precision": 6,
+        "scale": 4
+      },
+      {
+        "name": "PosLocationName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "PosDeviceName",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 300,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Tip",
+        "type": "decimal",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "RMSSalesRepName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 60,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "RMSSalesRepNumber",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 20,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "OrderType",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "AmountPaidByGiftCard",
+        "type": "money",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4
+      },
+      {
+        "name": "isProcessing",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isBusinessAddress",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "shipmentStatus",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "fulfillmentStatus",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DatePickedUp",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "BatchID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "MPOSDeviceID",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "isCustomizedClubOrder",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "CashTendered",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "ShipCounty",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "EMVProvider",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 64,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "tableNumber",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 60,
+        "precision": 0,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_ClubBatches": {
+    "columns": [
+      {
+        "name": "ClubBatchID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "BatchNumber",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "ClubLevelID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "TargetShipDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "Rate",
+        "type": "money",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4
+      },
+      {
+        "name": "NumberOfBottles",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "WineShipperID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isExportCreditCardList",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "MemberSearchDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "WineShippingTypeID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isShipmentInfo",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "WineBottleSizeID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isWineInfo",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isBillingStarted",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isClosed",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CollateralSKUs",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isProcessingStarted",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isProcessingStopped",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "ProcessingStartTime",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ProcessingEndTime",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ProcessingNumberOfRecords",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "ProcessingNumberOfRecordsCompleted",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "isUseOldProcessingLogic",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isCreatedOrders",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "BatchName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CutOffDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "LastShipDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "isCreatingStarted",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isCreatingStopped",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "CreatingStartTime",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "CreatingEndTime",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "CreatingNumberOfRecords",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "CreatingNumberOfRecordsCompleted",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "RowID",
+        "type": "bigint",
+        "nullable": false,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 0
+      },
+      {
+        "name": "isTemplate",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "FutureShipDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "isShipImmediately",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "CustomizeStartDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "CustomizeEndDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      }
+    ]
+  },
+  "VW_ClubLevels": {
+    "columns": [
+      {
+        "name": "ClubLevelID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Title",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Description",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Rate",
+        "type": "money",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4
+      },
+      {
+        "name": "NumberOfBottles",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "DisplayOrder",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "isActive",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "MetaTagTitle",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "MetaTagKeywords",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "MetaTagDescription",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "LastShipmentDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isNeedNotification",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "DaysBeforeNotification",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "RowID",
+        "type": "bigint",
+        "nullable": false,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 0
+      },
+      {
+        "name": "DisplayName",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 30,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "onSignUpRedirectDestinationProductCategoryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "onLoginRedirectDestinationProductCategoryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ClubTypeID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "EmailContent",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "SubscriptionSettingsID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "FlexPayProductCategoryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_ClubMembers": {
+    "columns": [
+      {
+        "name": "rowID",
+        "type": "int",
+        "nullable": false,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "ClubMemberID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "AltClubMemberID",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "MemberID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipMemberID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "AltShipMemberID",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ClubLevelID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ClubFrequencyID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Months",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "Weeks",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "LastBillDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "LastBatchNumber",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "LastPaymentStatus",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "NextBillDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "Rate",
+        "type": "money",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4
+      },
+      {
+        "name": "NumberOfBottles",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "TotalNumberOfShipments",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "CurrentNumberOfShipments",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "ShipBirthDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ShipFirstName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipLastName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipCompany",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipAddress",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipAddress2",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipCity",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipState",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipZipCode",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipPhone",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipEmail",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 160,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "SourceCode",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isGiftMessage",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "GiftMessage",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isActive",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "EndDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "AffiliateID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Affiliate",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "AffiliateCommission",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "ClubBlob",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "isOnHold",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "OnHoldDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "WineShippingTypeID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipSalutation",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 20,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipPhone2",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "BillCountryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipCountryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "BillProvince",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 90,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipProvince",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 90,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isSupplemental",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "ModifiedByme",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateImported",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "CancelDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "SalesAssociateID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "StartDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "HoldStartDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "CancelReasonID",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "HoldReasonID",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "ShipAddressName",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ClubSignupLocationID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_ClubReasons": {
+    "columns": [
+      {
+        "name": "id",
+        "type": "int",
+        "nullable": false,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "reason",
+        "type": "varchar",
+        "nullable": false,
+        "max_length": 255,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "type",
+        "type": "varchar",
+        "nullable": false,
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_CreditCardTypes": {
+    "columns": [
+      {
+        "name": "CreditCardTypeID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CreditCardType",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CreditCardTypeShort",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CreditCardTypeNS",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DisplayOrder",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "RowID",
+        "type": "bigint",
+        "nullable": false,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_GetWineryIDs": {
+    "columns": [
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_InventoryByLocation": {
+    "columns": [
+      {
+        "name": "InventoryByLocationID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ProductID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "InventoryLocationID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Count",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "Allocated",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "OutOfStockOptionID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "OutOfStockMessage",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 1000,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DisplayQuantityLeftAt",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "EmailNotificationAt",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "OutOfStockAt",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "isEmailAlertSent",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isIgnoreEmailAlert",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "EmailTo",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_InventoryLocationTransactions": {
+    "columns": [
+      {
+        "name": "InventoryLocationTransactionID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ProductID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "InventoryLocationID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CartID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "TransferFrom",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "TransferTo",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Description",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Notes",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Count",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_InventoryLocations": {
+    "columns": [
+      {
+        "name": "InventoryLocationID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "LocationName",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "IsBonded",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "IsDefault",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "IsAllocationDefault",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "IsActive",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_MemberNotes": {
+    "columns": [
+      {
+        "name": "RowID",
+        "type": "int",
+        "nullable": false,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "MemberNotesID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "MemberID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Notes",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 8000,
+        "precision": 0,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_MemberTypes": {
+    "columns": [
+      {
+        "name": "MemberTypeID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "MemberType",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isDeletable",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "Keyword",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "pbmListID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "RowID",
+        "type": "bigint",
+        "nullable": false,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_Members": {
+    "columns": [
+      {
+        "name": "rowID",
+        "type": "int",
+        "nullable": false,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "MemberID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "AltMemberID",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "AltAccountNumber",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "BirthDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "FirstName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "LastName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Company",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Address",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Address2",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "City",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "State",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ZipCode",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Phone",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Email",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 160,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Username",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Password",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 1000,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "SourceCode",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CharityID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CreditCardTypeID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CreditCardExpMo",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "CreditCardExpYr",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "NameOnCard",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "PBMCompletedDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "CurrentAccessDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "LastAccessDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateImported",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateExported",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CopiedFromMemberID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Salutation",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 20,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Phone2",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "MemberNumber",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "CountryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Province",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 90,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CardAlias",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "auth_net_customerID",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isConfirmed",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isLocked",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "IsProtected",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_MembersXMemberTypes": {
+    "columns": [
+      {
+        "name": "MembersXMemberTypesID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "MemberID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "MemberTypeID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "RowID",
+        "type": "bigint",
+        "nullable": false,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_OrderNotes": {
+    "columns": [
+      {
+        "name": "OrderNotesID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CartID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Notes",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 2048,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "RowID",
+        "type": "bigint",
+        "nullable": false,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_OrderRefund": {
+    "columns": [
+      {
+        "name": "OrderRefundID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CartID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Reason",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 2048,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Amount",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "RowID",
+        "type": "bigint",
+        "nullable": false,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_ProductTypes": {
+    "columns": [
+      {
+        "name": "ProductTypeID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ProductType",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DisplayOrder",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "RowID",
+        "type": "bigint",
+        "nullable": false,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_Products": {
+    "columns": [
+      {
+        "name": "rowID",
+        "type": "int",
+        "nullable": false,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "ProductID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ProductTypeID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ProductKeyID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "PhotoPath",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Picture",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ProductName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ProductSKU",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Price1",
+        "type": "money",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4
+      },
+      {
+        "name": "PriceUnit1",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "SalePrice1",
+        "type": "money",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4
+      },
+      {
+        "name": "Price2",
+        "type": "money",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4
+      },
+      {
+        "name": "PriceUnit2",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "SalePrice2",
+        "type": "money",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4
+      },
+      {
+        "name": "WinePricePerBottle",
+        "type": "money",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4
+      },
+      {
+        "name": "WinePricePerCase",
+        "type": "money",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4
+      },
+      {
+        "name": "WineSalePricePerBottle",
+        "type": "money",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4
+      },
+      {
+        "name": "WineSalePricePerCase",
+        "type": "money",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4
+      },
+      {
+        "name": "isActive",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isActiveBySupplier",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isWineStartPage",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "Teaser",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "MemberTeaser",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "NonMemberTeaser",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "MetaTagTitle",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "MetaTagKeywords",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "MetaTagDescription",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Description",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isTaxable",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isShownOnAddOrder",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "MarketingURL",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "OverrideCompliance",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isFavorite",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "BrandID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isForExport",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "facebookTeaser",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": -1,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isWebserviceEnabled",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "cogs",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "MarketplaceSKU",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 255,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "MarketingFee",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "ShortName",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 30,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "PlainName",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 255,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CostPerBottle",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "CostPerCase",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "COGS2",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "COGS1",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "ReportGroupID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "KitBottleSizeID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "productWeight",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "denominationID",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "isPromoExcluded",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isComplianceExcluded",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "MinPerOrder",
+        "type": "tinyint",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 3,
+        "scale": 0
+      },
+      {
+        "name": "MaxPerOrder",
+        "type": "tinyint",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 3,
+        "scale": 0
+      },
+      {
+        "name": "isDataFeedWatchEnabled",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isExcludedFromCategoryTax",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isPhysicalInventoryExcluded",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isTaxIncluded",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "PrinterGroupID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_ProductsXKits": {
+    "columns": [
+      {
+        "name": "ProductsXKitsID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "KitID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ProductID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Quantity",
+        "type": "int",
+        "nullable": false,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "RealPrice",
+        "type": "decimal",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "PriceID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ProductTypeID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "RowID",
+        "type": "bigint",
+        "nullable": false,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 0
+      },
+      {
+        "name": "inventoryPriceID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_ReportGroups": {
+    "columns": [
+      {
+        "name": "RowID",
+        "type": "int",
+        "nullable": false,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "ReportGroupID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ReportGroup",
+        "type": "varchar",
+        "nullable": false,
+        "max_length": 255,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": false,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_SalesAssociates": {
+    "columns": [
+      {
+        "name": "rowID",
+        "type": "int",
+        "nullable": false,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "SalesAssociateID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "FirstName",
+        "type": "nvarchar",
+        "nullable": false,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "LastName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "pin",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "canOverrideSC",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "canVoidOrders",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "canEditMembers",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "canCustomizeProductPrice",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "canQuickDiscount",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isActive",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "canOpenClose",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "canCaptureAuthorizedOrders",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "canWaiveTaxes",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "canOverrideFiredTicket",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_WillCallLocations": {
+    "columns": [
+      {
+        "name": "WillCallLocationID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Company",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Address",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Address2",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "City",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "State",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ZipCode",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Rate",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "Phone",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShippingTypeID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isThirdPartyShipper",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "WillCallOptionID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Email",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 90,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Website",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": -1,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineShipperID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "LicenseRelationshipID",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "RowID",
+        "type": "bigint",
+        "nullable": false,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_WineAppellations": {
+    "columns": [
+      {
+        "name": "WineAppellationID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineAppellation",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineRegionID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "RowID",
+        "type": "bigint",
+        "nullable": false,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_WineBottleSizes": {
+    "columns": [
+      {
+        "name": "WineBottleSizeID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineBottleSize",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DisplayOrder",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "Volume",
+        "type": "decimal",
+        "nullable": true,
+        "max_length": 5,
+        "precision": 5,
+        "scale": 3
+      },
+      {
+        "name": "RowID",
+        "type": "bigint",
+        "nullable": false,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 0
+      },
+      {
+        "name": "NumberOfBottles",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_WineBrands": {
+    "columns": [
+      {
+        "name": "rowID",
+        "type": "int",
+        "nullable": false,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "WineBrandID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineBrand",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineMaker",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineCharacteristics",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Description",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineBrandKey",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_WineShippingTypes": {
+    "columns": [
+      {
+        "name": "WineShippingTypeID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShippingType",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShippingCode",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipTime",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isClubOnly",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isLowestCostShipping",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "DisplayOrder",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "isWillCall",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllocationOnly",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isDisplayOnClubSignup",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "RowID",
+        "type": "bigint",
+        "nullable": false,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 0
+      },
+      {
+        "name": "isActive",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isPosOnly",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "ShipCompliantTag",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isHiddenForStore",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "InventoryLocationID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_WineTypes": {
+    "columns": [
+      {
+        "name": "WineTypeID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineType",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DisplayOrder",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "RowID",
+        "type": "bigint",
+        "nullable": false,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_WineVarietals": {
+    "columns": [
+      {
+        "name": "WineVarietalID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineVarietal",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineTypeID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "RowID",
+        "type": "bigint",
+        "nullable": false,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_Wineries": {
+    "columns": [
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineryName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "AbbreviatedName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 10,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Address",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "City",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "State",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 6,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ZipCode",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Phone",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "CountryCode",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 6,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "HttpPath",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 200,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "IPAddress",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isSSL",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "Directory",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "HomepageID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ProductCategoryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "EmailHeader",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "EmailFooter",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "PrimaryEmail",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "StatsPath",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "StatsPackage",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "StatsUsername",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "StatsPassword",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isAutoSendToNVL",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAutoSendToWTN",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAutoSendToNVLViaAPI",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "AutoOrderNumber",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "isActive",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isFirstPartyWine",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "hasAffiliates",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "hasCharities",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isSendWineOrderToShipper",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "hasWineSearch",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "WineSearchUses",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "InventoryEmail",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "InventoryTimeOut",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "OutOfStockOptionID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "OutOfStockMessage",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ElypsisUsername",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ElypsisPassword",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ElypsisCustomerRetrievalDate",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DisplayQuantityLeftAt",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "EmailNotificationAt",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "DatePBMUpdated",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "allowClubDeactivation",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isManageCSS",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "CSSName",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isShipCompliantEnabled",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "ShipCompliantUserName",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipCompliantPassword",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipCompliantTag",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 200,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isShipCompliantForFulfillment",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isStopNonCompliantOrders",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isQuarantineNonCompliantOrders",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "ShipCompliantOrderPrefix",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ShipCompliantURL",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isAllowAllocation",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isKiosk",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowAcceptOrder",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowAddOrder",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowSelectProducts",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowEditOrder",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowEditMember",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowEditNotes",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowRefundOrder",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowCopyOrder",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowSplitOrder",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowCancelOrder",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isCustomOrderCheckboxEnabled",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "CustomOrderCheckboxName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 200,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isAllowWinePricing",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isRefundDemo",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowImages",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "ShipCompliantFulfillmentAccount",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isShipCompliantTaxServiceEnabled",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isShipCompliantAddressValidationEnabled",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isShipCompliantAgeVerificationEnabled",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "OutOfStockAt",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "ThirdPartyShipper",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "pool",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "googleUA",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 60,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "hasStoreFilter",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isLockedSite",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "hasDOBAuthentication",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isUseThirdPartyShipperForProducts",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowGroupOrders",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowMultipleAddresses",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowUploadOrderLists",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowEditCompletedOrders",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "TabChoice",
+        "type": "int",
+        "nullable": false,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "IsSelectedTabs",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "IsCreatedTabs",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "hasDonations",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isFriendOrderManagementEnabled",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "CustomDownloadWineNotes",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 200,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isSortEnabled",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isStatePopupBeforeAddToCart",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "hasInvite",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "hasInviteImport",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowClubMemberShippingTypes",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "RequireBottleMultiplesOf",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "isAllowFutureShipDate",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "RefundType",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "hasBlog",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isMultipleCurrencies",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "defaultCurrencyID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isAllowCreditCardImport",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "CreditCardExportFormat",
+        "type": "varchar",
+        "nullable": false,
+        "max_length": 5,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isClearSessionOnCheckout",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isQuickInfo",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isValutecPINRequired",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isValutecEnabled",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "ValutecTerminalID",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 20,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isManagePods",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "IsDrilldowns",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowCreditCardOnFile",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isUseCreditCardOnFile",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "hasAdminPOS",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "StateSelectionOptionID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "AllocationStateSelectionOptionID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isShipCompliantForClubsEnabled",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isCreditCardSecurityCodeEnabled",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isClubsEnabled",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isStoreEnabled",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isShipCompliantInventoryEnabled",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isVinoVisitEnabled",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "VinoVisitAppID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WebServiceDatabase",
+        "type": "char",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "isSendLabsEnabled",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "SendLabsUserName",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "SendLabsPassword",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "RowID",
+        "type": "bigint",
+        "nullable": false,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 0
+      },
+      {
+        "name": "isMemberMaintenanceEnabled",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "hasSalesAssociate",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "hasOMSSite",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "hasOMSSave",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "hasAddressBook",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "hasCustomWineAttributes",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "hasPromoPriceDisplay",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isEditMemberNumber",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "hasRecipes",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "enableTrueShip",
+        "type": "varchar",
+        "nullable": false,
+        "max_length": 10,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ValutecClientKeyID",
+        "type": "varchar",
+        "nullable": false,
+        "max_length": 40,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "hasFacebookSite",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "inventorySyncProductNotFound",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "externalBaseDomain",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": -1,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "externalCSSLink",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": -1,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "externalJSLink",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": -1,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "externalStoreFrontLink",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": -1,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "hasCookieCart",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "hasQuickCheckout",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "enableTestCreditCard",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isShipCompliantLevelOne",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "hasVATracking",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "cookieCartExpiryInDays",
+        "type": "int",
+        "nullable": false,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "enableSCMarketplace",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "SCMarketplaceKey",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "SCMarketplacePassword",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 50,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "hasAdHoc",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "DateInactive",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "hasClearCarts",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isAllowFulfillment",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "hCaptchaSiteKey",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 64,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "allowSubscribeButton",
+        "type": "bit",
+        "nullable": false,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      }
+    ]
+  },
+  "VW_Wines": {
+    "columns": [
+      {
+        "name": "rowID",
+        "type": "int",
+        "nullable": false,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "WineID",
+        "type": "uniqueidentifier",
+        "nullable": false,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineryID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineBrandID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineBottleSizeID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Picture",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 500,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineSKU",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "VineyardDesignation",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Vintage",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "WineTypeID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineVarietalID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineAppellationID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "SalePricePerBottle",
+        "type": "money",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4
+      },
+      {
+        "name": "PricePerBottle",
+        "type": "money",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4
+      },
+      {
+        "name": "SalePricePerCase",
+        "type": "money",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4
+      },
+      {
+        "name": "PricePerCase",
+        "type": "money",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4
+      },
+      {
+        "name": "MinBottlesPerOrder",
+        "type": "int",
+        "nullable": false,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "MaxBottlesPerOrder",
+        "type": "int",
+        "nullable": false,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "BottlesInACase",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "isSellAsBottle",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isSellAsCase",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isActive",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isStoreFront",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isWineStartPage",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "isFeatureWine",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "Teaser",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Description",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "TastingNotes",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Ratings",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Awards",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "VineyardNotes",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ProductionNotes",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineMakerNotes",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "FoodPairing",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Production",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "OtherNotes",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "HarvestDate",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Sugar",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Acid",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "PH",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Aging",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Fermentation",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "BottlingDate",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "ResidualSugar",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Tannin",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "AlcoholPercentage",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "MetaTagTitle",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 510,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "MetaTagKeywords",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "MetaTagDescription",
+        "type": "ntext",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WSRating",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "RPRating",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "WERating",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "RGSRating",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "AverageRating",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "Weight",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 2
+      },
+      {
+        "name": "DateAdded",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "DateModified",
+        "type": "datetime",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 23,
+        "scale": 3
+      },
+      {
+        "name": "ModifiedBy",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineRegionID",
+        "type": "uniqueidentifier",
+        "nullable": true,
+        "max_length": 16,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "BarrelAgingName",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "Ageability",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 100,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "WineNotesPDF",
+        "type": "nvarchar",
+        "nullable": true,
+        "max_length": 500,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "NumberOfBottlesTowardMultiple",
+        "type": "int",
+        "nullable": false,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "CostPerBottle",
+        "type": "money",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4
+      },
+      {
+        "name": "CostPerCase",
+        "type": "money",
+        "nullable": true,
+        "max_length": 8,
+        "precision": 19,
+        "scale": 4
+      },
+      {
+        "name": "isTaxable",
+        "type": "bit",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 1,
+        "scale": 0
+      },
+      {
+        "name": "MarketplaceSKU",
+        "type": "varchar",
+        "nullable": true,
+        "max_length": 255,
+        "precision": 0,
+        "scale": 0
+      },
+      {
+        "name": "MarketingFee",
+        "type": "numeric",
+        "nullable": true,
+        "max_length": 9,
+        "precision": 18,
+        "scale": 4
+      },
+      {
+        "name": "denominationID",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      },
+      {
+        "name": "QuantityInPack",
+        "type": "tinyint",
+        "nullable": true,
+        "max_length": 1,
+        "precision": 3,
+        "scale": 0
+      },
+      {
+        "name": "BottleVolume",
+        "type": "int",
+        "nullable": true,
+        "max_length": 4,
+        "precision": 10,
+        "scale": 0
+      }
+    ]
+  }
+}
