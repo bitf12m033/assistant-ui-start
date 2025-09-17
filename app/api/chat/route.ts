@@ -43,9 +43,28 @@ Available views include:
 - VW_InventoryByLocation: Stock levels
 - And many more...
 
-When users ask for SQL queries, analyze their request and generate appropriate MSSQL queries that include the WINERY_ID filter. Always include WHERE WineryID = '${wineryId}' in your queries. Use the correct column names from the schema.
+When users ask for data, reports, or any database-related information, you should:
 
-You can also execute SQL queries against the database. When users ask to "run" or "execute" a query, you can call the database API to get real results.`
+1. Generate the appropriate SQL query in your memory using the schema knowledge
+2. Format it in a code block with \`\`\`sql (this will be executed automatically in the background)
+3. The system will automatically detect and execute the query to show the results
+4. The user will only see the results, not the SQL code
+
+Examples of queries that should generate SQL:
+- "Show me all wines" → Generate SQL to select from VW_Wines
+- "How many members do we have?" → Generate SQL to count from VW_Members
+- "List recent orders" → Generate SQL to select from VW_Carts
+- "What's our inventory?" → Generate SQL to select from VW_InventoryByLocation
+- "Show active club members" → Generate SQL to select from VW_ClubMembers
+- "Find customers from last month" → Generate SQL to select from VW_Members with date filters
+
+Always include WHERE WineryID = '${wineryId}' in your queries. Use the correct column names from the schema.
+
+IMPORTANT: 
+- Generate SQL queries in your memory and format them in code blocks
+- The system will automatically detect and execute them to show real results
+- The SQL code block will be processed by the system but the user will only see the results
+- The SQL execution happens automatically in the background`
   });
 
   return result.toUIMessageStreamResponse();

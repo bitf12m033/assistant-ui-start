@@ -24,8 +24,8 @@ import {
   ComposerAttachments,
   UserMessageAttachments,
 } from "@/components/assistant-ui/attachment";
-import { MarkdownText } from "@/components/assistant-ui/markdown-text";
 import { ToolFallback } from "@/components/assistant-ui/tool-fallback";
+import { MarkdownTextWithAutoExecutor } from "@/components/assistant-ui/markdown-text-with-auto-executor";
 import { TooltipIconButton } from "@/components/assistant-ui/tooltip-icon-button";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -243,14 +243,14 @@ const AssistantMessage: FC = () => {
         data-role="assistant"
       >
         <div className="aui-assistant-message-content mx-2 leading-7 break-words text-foreground">
-          <MessagePrimitive.Parts
-            components={{
-              Text: MarkdownText,
-              tools: { 
-                Fallback: ToolFallback
-              },
-            }}
-          />
+                <MessagePrimitive.Parts
+                  components={{
+                    Text: MarkdownTextWithAutoExecutor,
+                    tools: { 
+                      Fallback: ToolFallback
+                    },
+                  }}
+                />
           <MessageError />
         </div>
 
