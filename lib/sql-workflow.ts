@@ -95,7 +95,7 @@ export class SQLWorkflow {
       }
       
       this.updateStep(result.steps, 'execute', 'completed', `Query executed successfully (${dbResult.rowCount || 0} rows)`);
-      result.results = dbResult as Record<string, unknown>;
+      result.results = dbResult as unknown as Record<string, unknown>;
 
       // Step 5: Format Results
       this.updateStep(result.steps, 'format', 'in_progress', 'Preparing results for display...');

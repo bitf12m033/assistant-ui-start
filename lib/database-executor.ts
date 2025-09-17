@@ -20,16 +20,17 @@ export async function executeDatabaseQuery(
   try {
     const requestBody: DatabaseQueryRequest = {
       query: sqlQuery,
-      ...(wineryId && { wineryId }),
-      ...(adminContactId && { admin_contact_id: adminContactId })
+      ...(wineryId && { wineryId })
     };
+
+    // Build cookie header
+    const cookieHeader = adminContactId ? `admin_contact_id=${adminContactId}` : '';
 
     const response = await fetch('https://api-dev.vinsuite.com/kaomi-demo-tools/database-query', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        // Add any required authentication headers here
-        // 'Authorization': `Bearer ${process.env.DATABASE_API_TOKEN}`,
+        ...(cookieHeader && { 'Cookie': cookieHeader })
       },
       body: JSON.stringify(requestBody),
     });

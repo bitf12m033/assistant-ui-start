@@ -87,6 +87,18 @@ export function validateWineryId(wineryId: string): boolean {
   return guidRegex.test(wineryId);
 }
 
+// Helper function to load database schema
+export function getDatabaseSchema(): string {
+  try {
+    const schemaPath = path.join(process.cwd(), 'data', 'views_schema_fixed.md');
+    const schema = fs.readFileSync(schemaPath, 'utf-8');
+    return schema;
+  } catch (error) {
+    console.error('Error loading schema:', error);
+    return 'Schema not available';
+  }
+}
+
 // Helper function to get winery context for prompts
 export function getWineryContext(): string {
   const wineryId = process.env.WINERY_ID;

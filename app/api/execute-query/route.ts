@@ -6,6 +6,8 @@ export async function POST(request: NextRequest) {
   try {
     const { sqlQuery } = await request.json();
 
+    console.log('🔍 Execute Query API - Received SQL:', sqlQuery);
+
     if (!sqlQuery) {
       return NextResponse.json(
         { success: false, error: 'SQL query is required' },
@@ -33,8 +35,12 @@ export async function POST(request: NextRequest) {
     const adminContactId = process.env.ADMIN_CONTACT_ID || '9F56A611-3193-4204-8B9E-6A970C4CAC44';
 
     // Validate the SQL query
+    console.log('🔍 Execute Query API - Validating SQL...');
     const validation = validateSQLQuery(sqlQuery);
+    console.log('🔍 Execute Query API - Validation result:', validation);
+    
     if (!validation.isValid) {
+      console.log('❌ Execute Query API - Validation failed:', validation.error);
       return NextResponse.json(
         { 
           success: false, 

@@ -1,6 +1,6 @@
 import { openai } from "@ai-sdk/openai";
 import { streamText, UIMessage, convertToModelMessages } from "ai";
-import { validateWineryId, getWineryContext } from "@/lib/sql-generator";
+import { validateWineryId, getWineryContext, getDatabaseSchema } from "@/lib/sql-generator";
 
 export async function POST(req: Request) {
   const { messages }: { messages: UIMessage[] } = await req.json();
@@ -26,22 +26,17 @@ ${getWineryContext()}
 
 You can help users generate SQL queries for their winery data. All queries will be automatically filtered by the current WINERY_ID to ensure data isolation.
 
+DATABASE SCHEMA:
+${getDatabaseSchema()}
+
 IMPORTANT COLUMN NOTES:
 - VW_Members does NOT have a 'Status' column
 - VW_Members has: isConfirmed, isLocked, IsProtected (bit columns)
 - VW_ClubMembers has: isActive (bit column) 
 - VW_Wines has: isActive (bit column)
 - VW_Products has: isActive (bit column)
-- Always use the correct column names from the schema
-
-Available views include:
-- VW_Wines: Wine inventory and details (use isActive for status)
-- VW_Carts: Orders and transactions  
-- VW_Members: Customer information (use isConfirmed, isLocked for status)
-- VW_ClubMembers: Wine club memberships (use isActive for status)
-- VW_Products: Product catalog (use isActive for status)
-- VW_InventoryByLocation: Stock levels
-- And many more...
+- Always use the correct column names from the schema above
+- For date columns, use DateAdded, DateModified, etc. (NOT CreatedOn)
 
 When users ask for data, reports, or any database-related information, you should:
 
@@ -60,11 +55,19 @@ Examples of queries that should generate SQL:
 
 Always include WHERE WineryID = '${wineryId}' in your queries. Use the correct column names from the schema.
 
+MSSQL SYNTAX NOTES:
+- Use TOP 10 instead of LIMIT 10
+- Use GETDATE() instead of NOW()
+- Use DATEADD() for date calculations
+- Use ISNULL() instead of COALESCE() when possible
+
 IMPORTANT: 
-- Generate SQL queries in your memory and format them in code blocks
+- Generate COMPLETE SQL queries in your memory and format them in code blocks
+- Ensure SQL queries are syntactically complete (properly closed parentheses, complete WHERE clauses, etc.)
 - The system will automatically detect and execute them to show real results
 - The SQL code block will be processed by the system but the user will only see the results
-- The SQL execution happens automatically in the background`
+- The SQL execution happens automatically in the background
+- Do NOT include explanatory text before or after the SQL code block`
   });
 
   return result.toUIMessageStreamResponse();

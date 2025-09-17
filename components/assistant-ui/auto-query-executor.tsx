@@ -63,15 +63,21 @@ export const AutoQueryExecutor: React.FC<AutoQueryExecutorProps> = ({
     
     console.log('🔍 extractSQLFromMessage - searching in text:', text.substring(0, 300) + '...');
     
+    // Clean up the text first - remove any prefix like "sqlCopy" and explanatory text
+    const cleanText = text
+      .replace(/^sqlCopy/i, '')
+      .replace(/^[^s]*?(?=select)/i, '') // Remove everything before "SELECT"
+      .trim();
+    
     // First try to match ```sql blocks
-    const sqlMatch = text.match(/```sql\s*([\s\S]*?)\s*```/i);
+    const sqlMatch = cleanText.match(/```sql\s*([\s\S]*?)\s*```/i);
     if (sqlMatch) {
       console.log('✅ extractSQLFromMessage - found SQL block:', sqlMatch[1].trim());
       return sqlMatch[1].trim();
     }
     
     // Then try to match any code blocks that contain SQL
-    const codeMatch = text.match(/```\s*([\s\S]*?)\s*```/);
+    const codeMatch = cleanText.match(/```\s*([\s\S]*?)\s*```/);
     if (codeMatch) {
       const code = codeMatch[1].trim();
       console.log('🔍 extractSQLFromMessage - found code block:', code.substring(0, 100) + '...');
@@ -81,6 +87,24 @@ export const AutoQueryExecutor: React.FC<AutoQueryExecutorProps> = ({
         console.log('✅ extractSQLFromMessage - code block looks like SQL');
         return code;
       }
+    }
+    
+    // If no code blocks found, try to extract SQL directly from the cleaned text
+    if (cleanText.toLowerCase().includes('select') && 
+        (cleanText.toLowerCase().includes('from') || cleanText.toLowerCase().includes('where'))) {
+      
+      // Check if the SQL is complete (has proper ending)
+      const sqlLines = cleanText.split('\n').map(line => line.trim()).filter(line => line);
+      const lastLine = sqlLines[sqlLines.length - 1];
+      
+      // If the last line is incomplete (ends with comma, open parenthesis, etc.), don't use it
+      if (lastLine && (lastLine.endsWith(',') || lastLine.endsWith('(') || lastLine.endsWith('AND') || lastLine.endsWith('OR'))) {
+        console.log('❌ extractSQLFromMessage - SQL appears incomplete, skipping');
+        return null;
+      }
+      
+      console.log('✅ extractSQLFromMessage - found SQL in plain text');
+      return cleanText.trim();
     }
     
     // Also check for SQL without code blocks (sometimes the LLM doesn't format it properly)
@@ -141,6 +165,8 @@ export const AutoQueryExecutor: React.FC<AutoQueryExecutorProps> = ({
       console.log('🔍 AutoQueryExecutor - extracted SQL:', sqlQuery);
       if (sqlQuery) {
         console.log('🚀 AutoQueryExecutor - executing query!');
+        console.log('🔍 AutoQueryExecutor - SQL length:', sqlQuery.length);
+        console.log('🔍 AutoQueryExecutor - SQL preview:', sqlQuery.substring(0, 200) + '...');
         executeQuery(sqlQuery);
       } else {
         console.log('❌ AutoQueryExecutor - no SQL extracted from message');
